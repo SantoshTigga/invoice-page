@@ -1,0 +1,151 @@
+/* src/Invoice.css */
+.invoice {
+  max-width: 800px;
+  margin: 0;
+  padding: 0; /* Reduce padding */
+  border: 0px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 12px; /* Reduce font size */
+}
+
+.section {
+  margin-bottom: 0px; /* Reduce margin */
+  padding: 0px; /* Reduce padding */
+  border: 0px solid #ccc;
+  border-radius: 5px;
+  page-break-inside: avoid; /* Prevent page break inside sections */
+}
+
+.company-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0px; /* Reduce margin */
+}
+
+.logo-container {
+  margin-right: 10px; /* Reduce margin */
+}
+
+.company-logo {
+  max-width: 80px; /* Reduce size */
+  height: auto;
+}
+
+.section h3 {
+  margin-bottom: 1px; /* Reduce margin */
+  font-size: 1em; /* Reduce font size */
+  color: #333;
+}
+
+.items-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px; /* Ensure consistent font size */
+}
+
+.items-table th,
+.items-table td {
+  border: 1px solid #ccc;
+  padding: 3px; /* Reduce padding */
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.items-table th {
+  background-color: #f4f4f4;
+}
+
+.total {
+  text-align: right;
+}
+
+.total p {
+  font-size: 1em; /* Reduce font size */
+  font-weight: bold;
+  color: #333;
+}
+
+.invoice-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-terms {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bill-ship-to {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bill-to,
+.ship-to {
+  flex-basis: 45%;
+}
+
+@media (max-width: 768px) {
+  .bill-to,
+  .ship-to {
+    flex-basis: 100%;
+  }
+}
+
+/* print Css section */
+/* src/App.css */
+@media print {
+  button {
+    display: none;
+  }
+  .invoice {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .section {
+    page-break-inside: avoid;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 5px; /* Reduce padding */
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+}
+
+/* Authorization CSS */
+.bank-auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  page-break-inside: avoid; /* Prevent page break inside .bank-auth */
+}
+
+.bank {
+  flex: 1;
+}
+
+.auth-sign {
+  text-align: center;
+  margin-left: 10px; /* Reduce margin */
+  page-break-inside: avoid; /* Prevent page break inside .auth-sign */
+}
+
+.auth-sign img {
+  max-width: 200px; /* Reduce size */
+}
+
+.signature-name {
+  margin-top: 5px;
+  font-weight: bold;
+  page-break-inside: avoid; /* Prevent page break inside .signature-name */
+}

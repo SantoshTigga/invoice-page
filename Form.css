@@ -1,0 +1,154 @@
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+div.item-row {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+/* src/Form.css */
+
+.App {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.form-section fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-section legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.item-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.item-row.selected {
+  background-color: #f0f8ff; /* Light blue background for selected items */
+}
+
+.item-row input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.item-details {
+  flex: 1 1 50%; /* Take 50% of available space, wrap to next line if needed */
+  display: flex;
+  align-items: center;
+}
+
+.item-details label {
+  margin-right: 10px;
+}
+
+.item-details input {
+  flex: 1;
+}
+
+.item-fields {
+  flex: 1 1 50%; /* Take 50% of available space, wrap to next line if needed */
+  display: flex;
+  align-items: center;
+}
+
+.item-fields label {
+  margin-right: 10px;
+}
+
+.item-fields button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.item-fields button:hover {
+  background-color: #c82333;
+}
